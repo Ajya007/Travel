@@ -1,0 +1,48 @@
+.floater-form {
+	position: relative;
+	z-index: 3;
+	display: flex;
+	align-items: center;
+	background-color: #8d1f1f;
+	justify-content: space-between;
+	transform: translateY(-50%);
+	width: 100%;
+	padding: 1.5rem 2.375rem;
+}
+
+.floater-sec-1 {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	.part-1 {
+		display: flex;
+		gap: 2rem;
+	}
+	.part-2 {
+		display: flex;
+		gap: 2rem;
+	}
+}
+
+//checkbox
+
+.roundTrip input {
+	width: 20px;
+	height: 20px;
+	background-color: $white;
+}
+
+//button
+
+.find-btn {
+	padding: 1.375rem 3.75rem;
+	font-family: $Poppins;
+	font-size: 1.125rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.1675rem;
+	letter-spacing: 0.02rem;
+	color: $white;
+	white-space: nowrap;
+	cursor: pointer;
+}

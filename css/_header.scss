@@ -1,0 +1,26 @@
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1.25rem 0rem;
+}
+.nav {
+	display: flex;
+	gap: 2rem;
+	a {
+		color: $white;
+		font-family: $sans;
+	}
+}
+.nav-end {
+	display: flex;
+	gap: 4.375rem;
+	align-items: center;
+}
+
+.end {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1.6rem;
+}

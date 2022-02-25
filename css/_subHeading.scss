@@ -1,0 +1,24 @@
+.subHeading {
+	padding: 1.5rem 0;
+	h3 {
+		font-family: $Poppins;
+		font-size: 1.125rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 1.6875rem;
+		letter-spacing: 0rem;
+		text-align: center;
+		color: $light-grey;
+		margin-bottom: 0.5rem;
+	}
+	h2 {
+		font-family: $Volkhov;
+		font-size: 3.125rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 4.0625rem;
+		letter-spacing: 0rem;
+		text-align: center;
+		color: $header;
+	}
+}

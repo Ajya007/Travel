@@ -1,0 +1,50 @@
+.services {
+	position: relative;
+	background-color: aqua;
+	min-height: 100vh;
+	.services-top {
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	.services-bottom {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+}
+.cards {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.services-container {
+	.card {
+		padding: 2.5rem;
+		max-width: 267px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-self: center;
+		background-color: rgb(128, 128, 42);
+
+		.card-img {
+			background-color: red;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		svg {
+			margin-bottom: 1.875rem;
+		}
+		h4 {
+			margin-bottom: 0.9375rem;
+			text-align: center;
+		}
+		p {
+			max-width: 11.3125rem;
+			text-align: center;
+		}
+	}
+}

@@ -1,0 +1,27 @@
+// font-family: 'Poppins', sans-serif;
+// font-family: 'Roboto', sans-serif;
+//font-family: 'Volkhov', serif;
+
+html {
+	scroll-behavior: smooth;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+@mixin easeOut {
+	transition: all 0.5s ease-out;
+}
+@mixin easeIn {
+	transition: all 0.5s ease-in;
+}
+
+.container {
+	max-width: 75em;
+	margin: auto;
+}

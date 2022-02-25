@@ -1,0 +1,31 @@
+.subheader {
+	background-color: $purple;
+	color: $white;
+	font-family: $Roboto;
+}
+.subheader-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 0rem;
+}
+
+.subheader-contact {
+	display: flex;
+	gap: 2rem;
+	.s-c-1,
+	.s-c-2,
+	.s-c-3 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.5rem;
+	}
+}
+
+.subheader-time {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+}
