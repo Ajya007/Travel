@@ -3,6 +3,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 1.25rem 0rem;
+	background-color: transparent;
 }
 .nav {
 	display: flex;
@@ -23,4 +24,120 @@
 	justify-content: center;
 	align-items: center;
 	gap: 1.6rem;
+}
+
+//hamburger
+
+.menu-btn {
+	display: none;
+	position: relative;
+	cursor: pointer;
+	z-index: 12;
+	@include easeOut;
+	.btn-line {
+		background-color: $white;
+		width: 1.75rem;
+		height: 0.25rem;
+		margin: 0.26rem;
+		@include easeOut;
+	}
+	&.close {
+		transform: rotate(180deg);
+		.btn-line {
+			&:nth-child(1) {
+				transform: rotate(45deg) translate(5px, 5px);
+			}
+
+			&:nth-child(2) {
+				opacity: 0;
+			}
+			&:nth-child(3) {
+				transform: rotate(-45deg) translate(7px, -6px);
+			}
+		}
+	}
+}
+
+//mobile.....................................................................................................
+
+@media only screen and (max-width: 467px) {
+	.header-container {
+		background-color: $purple;
+		padding: 1rem;
+	}
+	.nav-end {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		background-color: $purple;
+		left: 0;
+		top: 70px;
+		width: 100%;
+		padding: 1rem;
+		z-index: 10;
+		transform: translateX(-100%);
+		@include easeOut;
+		&.close {
+			transform: translateX(0%);
+		}
+	}
+	.nav {
+		flex-direction: column;
+	}
+	.end {
+		flex-direction: column;
+	}
+
+	.menu-btn {
+		display: block;
+	}
+}
+
+//tablets..............................................................................................................
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+	.subheader {
+		display: none;
+	}
+	.header-container {
+		background-color: $purple;
+		padding: 1rem;
+	}
+	.nav-end {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		background-color: $purple;
+		left: 0;
+		top: 70px;
+		width: 100%;
+		padding: 1rem;
+		z-index: 10;
+		transform: translateX(-100%);
+		@include easeOut;
+		&.close {
+			transform: translateX(0%);
+		}
+	}
+	.nav {
+		flex-direction: column;
+	}
+	.end {
+		flex-direction: column;
+	}
+
+	.menu-btn {
+		display: block;
+	}
+}
+
+//for small screen laptops.......................................................................................
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.end {
+		display: none;
+	}
+	.header-container {
+		padding: 1rem;
+	}
 }

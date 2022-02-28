@@ -1,7 +1,7 @@
 .services {
 	position: relative;
 	background-color: aqua;
-	min-height: 100vh;
+
 	.services-top {
 		position: absolute;
 		right: 0;
@@ -17,6 +17,7 @@
 	display: flex;
 	justify-content: space-between;
 	gap: 1rem;
+	flex-wrap: wrap;
 }
 
 .services-container {
@@ -47,4 +48,9 @@
 			text-align: center;
 		}
 	}
+}
+
+//tablets.....................................................................................................
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
 }

@@ -17,7 +17,6 @@
 	background-image: url("../images/showcase.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-height: 100vh;
 	position: relative;
 	z-index: 1;
 	.overlay {
@@ -33,7 +32,7 @@
 	display: flex;
 	flex-direction: column;
 	padding-top: 6.125rem;
-	padding-bottom: 169px;
+	padding-bottom: 10rem;
 	gap: 1rem;
 	h3 {
 		font-family: $Poppins;
@@ -67,5 +66,79 @@
 		letter-spacing: 0em;
 		text-align: left;
 		max-width: 33.375rem;
+	}
+}
+
+//mobile.....................................................................................................
+
+@media only screen and (max-width: 467px) {
+	.showcase-content-text {
+		display: flex;
+		padding: 1rem;
+		flex-direction: column;
+		padding-top: 6.125rem;
+		padding-bottom: 4rem;
+		gap: 1rem;
+
+		h3 {
+			font-size: 1.4rem;
+			text-align: center;
+
+			max-width: max-content;
+		}
+		h1 {
+			text-align: center;
+			font-size: 3.5rem;
+		}
+		p {
+			text-align: center;
+			font-size: 1rem;
+		}
+	}
+}
+
+//tablets.....................................................................................................
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+	.showcase-content-text {
+		display: flex;
+		padding: 1rem;
+		flex-direction: column;
+		padding-top: 6.125rem;
+		padding-bottom: 2rem;
+		gap: 2rem;
+		justify-content: center;
+		align-items: center;
+
+		h3 {
+			font-size: 1.5rem;
+			text-align: center;
+
+			max-width: max-content;
+		}
+		h1 {
+			text-align: center;
+			font-size: 5rem;
+		}
+		p {
+			text-align: center;
+			font-size: 1.3rem;
+		}
+	}
+}
+
+//for small screen laptops.......................................................................................
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.showcase-content-text {
+		padding-left: 1rem;
+	}
+}
+
+//mobile.....................................................................................................
+
+@media only screen and (min-width: 1025px) {
+	.showcase {
+		min-height: 100vh;
 	}
 }

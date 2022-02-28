@@ -3,33 +3,77 @@
 	z-index: 3;
 	display: flex;
 	align-items: center;
-	background-color: #8d1f1f;
 	justify-content: space-between;
 	transform: translateY(-50%);
 	width: 100%;
 	padding: 1.5rem 2.375rem;
+	flex-wrap: wrap;
+	gap: 1rem;
+	background: $white;
+	box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.1);
+	border-radius: 12px;
 }
 
 .floater-sec-1 {
 	display: flex;
 	flex-direction: column;
 	gap: 1.5rem;
+	flex-wrap: wrap;
 	.part-1 {
 		display: flex;
 		gap: 2rem;
+		flex-wrap: wrap;
+		font-family: $Poppins;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 1.5rem;
+		letter-spacing: 0.02rem;
+		text-align: left;
+		color: $dark-grey;
+		input {
+			border: 2px solid #bf0b14;
+			background-color: #bf0b14;
+		}
 	}
 	.part-2 {
 		display: flex;
 		gap: 2rem;
+		flex-wrap: wrap;
+
+		.part-2-sub {
+			display: flex;
+			flex-direction: column;
+			h2,
+			label {
+				color: $dark-grey;
+				font-family: $Poppins;
+				font-size: 1rem;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 1.5rem;
+				letter-spacing: 0.02rem;
+			}
+			select,
+			input {
+				background: #ffffff;
+				box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.1);
+				border-radius: 4px;
+				height: 2rem;
+				outline: none;
+				border: none;
+				padding: 0.2rem;
+				font-family: $Poppins;
+				font-size: 12px;
+				font-style: normal;
+				font-weight: 400;
+				line-height: 18px;
+				letter-spacing: 0.02em;
+				text-align: left;
+				color: $light-grey;
+			}
+		}
 	}
-}
-
-//checkbox
-
-.roundTrip input {
-	width: 20px;
-	height: 20px;
-	background-color: $white;
 }
 
 //button
@@ -45,4 +89,37 @@
 	color: $white;
 	white-space: nowrap;
 	cursor: pointer;
+}
+
+//mobile.....................................................................................................
+
+@media only screen and (max-width: 467px) {
+	.floater-form {
+		transform: translateY(0%);
+		justify-content: center;
+	}
+	.floater-sec-1 {
+		justify-content: center;
+		.part-1 {
+			justify-content: center;
+		}
+		.part-2 {
+			justify-content: center;
+		}
+	}
+}
+
+//tablets.....................................................................................................
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+	.floater-form {
+		transform: translateY(0%);
+	}
+}
+
+//for small laptop
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.floater-form {
+		transform: translateY(0%);
+	}
 }

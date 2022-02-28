@@ -8,6 +8,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.5rem 0rem;
+	width: 100%;
 }
 
 .subheader-contact {
@@ -17,15 +18,37 @@
 	.s-c-2,
 	.s-c-3 {
 		display: flex;
-		justify-content: center;
-		align-items: center;
 		gap: 0.5rem;
+		font-size: 0.75rem;
 	}
 }
 
 .subheader-time {
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	gap: 0.5rem;
+	font-size: 0.75rem;
+}
+
+//mobile.....................................................................................................
+
+@media only screen and (max-width: 467px) {
+	.subheader {
+		display: none;
+	}
+}
+
+//tablets..............................................................................................................
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+	.subheader {
+		display: none;
+	}
+}
+
+//for small screen laptops.......................................................................................
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.subheader {
+		padding: 0.5rem 1rem;
+	}
 }
