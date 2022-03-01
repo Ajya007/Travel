@@ -1,16 +1,20 @@
 .services {
-	position: relative;
-	background-color: aqua;
+	overflow-x: hidden;
+	padding-bottom: 7.5rem;
 
 	.services-top {
 		position: absolute;
 		right: 0;
 		top: 0;
+		width: 12.8125rem;
+		height: 14rem;
 	}
 	.services-bottom {
 		position: absolute;
 		left: 0;
 		bottom: 0;
+		width: 12.8125rem;
+		height: 14rem;
 	}
 }
 .cards {
@@ -18,20 +22,57 @@
 	justify-content: space-between;
 	gap: 1rem;
 	flex-wrap: wrap;
+	padding-top: 1rem;
+	padding-bottom: 3rem;
 }
 
+.card-wrapper {
+	position: relative;
+	border-radius: 2.25rem;
+}
+.pink {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	left: -50px;
+	bottom: -50px;
+	background: #df6951;
+	border-radius: 30px 0px 10px;
+	z-index: 1;
+	display: none;
+	@include easeOut;
+
+	&.show {
+		display: block;
+	}
+}
 .services-container {
 	.card {
+		position: relative;
 		padding: 2.5rem;
-		max-width: 267px;
+		width: 16.6875rem;
+		height: 19.6875rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-self: center;
-		background-color: rgb(128, 128, 42);
+		outline: none;
+		border: none;
+		border-radius: 2.25rem;
+		z-index: 2;
+		cursor: pointer;
+		@include easeOut;
 
+		&:hover {
+			background: #ffffff;
+			box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+				0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+				0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+				0px 20px 13px rgba(0, 0, 0, 0.01),
+				0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+				0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+		}
 		.card-img {
-			background-color: red;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -53,4 +94,17 @@
 //tablets.....................................................................................................
 
 @media only screen and (min-width: 469px) and (max-width: 768px) {
+	.cards {
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+//mobile.....................................................................................................
+
+@media only screen and (max-width: 467px) {
+	.cards {
+		align-items: center;
+		justify-content: center;
+	}
 }

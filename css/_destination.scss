@@ -1,0 +1,99 @@
+.destination-cards {
+	padding: 1rem 0;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.d-card {
+	overflow: hidden;
+	width: 24.0625rem;
+	background: #ffffff;
+	border-radius: 24px;
+	filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02))
+		drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
+		drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481))
+		drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
+		drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185))
+		drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+	.d-card-img {
+		width: 100%;
+		height: 25.625rem;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+.d-text {
+	display: flex;
+	flex-direction: column;
+	gap: 1.43rem;
+	padding-top: 2rem;
+	padding-bottom: 3rem;
+	padding-left: 2rem;
+	padding-right: 0.5rem;
+}
+
+.d-title-content {
+	display: flex;
+	justify-content: space-between;
+
+	h3 {
+		color: $light-grey;
+		font-family: $Poppins;
+		font-size: 1.125rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 1.375;
+		letter-spacing: 0rem;
+	}
+}
+
+.d-days {
+	display: flex;
+	gap: 1.2rem;
+	p {
+		font-family: $Poppins;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 1.25rem;
+		letter-spacing: 0em;
+		color: $light-grey;
+	}
+}
+
+//mobile.....................................................................................................
+
+@media only screen and (max-width: 467px) {
+	.destination-cards {
+		justify-content: center;
+		align-items: center;
+	}
+	.d-card {
+		width: 23.125rem;
+	}
+}
+
+//tablets..............................................................................................................
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+	.destination-cards {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+//for small screen laptops.......................................................................................
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.destination-cards {
+		justify-content: center;
+		align-items: center;
+		gap: 2rem;
+	}
+}

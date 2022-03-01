@@ -114,6 +114,16 @@
 @media only screen and (min-width: 469px) and (max-width: 768px) {
 	.floater-form {
 		transform: translateY(0%);
+		justify-content: center;
+	}
+	.floater-sec-1 {
+		justify-content: center;
+		.part-1 {
+			justify-content: center;
+		}
+		.part-2 {
+			justify-content: center;
+		}
 	}
 }
 
