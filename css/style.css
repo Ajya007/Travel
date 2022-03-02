@@ -822,12 +822,15 @@ a {
 }
 
 .d-card {
+  cursor: pointer;
   overflow: hidden;
   width: 24.0625rem;
   background: #ffffff;
   border-radius: 24px;
   -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
           filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .d-card .d-card-img {
@@ -838,6 +841,11 @@ a {
 .d-card .d-card-img img {
   width: 100%;
   height: 100%;
+}
+
+.d-card:hover {
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .d-text {
@@ -925,6 +933,321 @@ a {
         -ms-flex-align: center;
             align-items: center;
     gap: 2rem;
+  }
+}
+
+.blue {
+  color: #012aa1;
+}
+
+.steps {
+  padding: 5rem 0rem;
+}
+
+.step-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.step-part-1 h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.6875rem;
+  letter-spacing: 0rem;
+  color: #5e6282;
+  margin-bottom: 1rem;
+}
+
+.step-part-1 h2 {
+  color: #14183e;
+  font-family: "Volkhov", serif;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.0625rem;
+  letter-spacing: 0rem;
+  text-align: left;
+  max-width: 32rem;
+  margin-bottom: 3.5rem;
+}
+
+.step-sub-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.5rem;
+}
+
+.step-sub-part-0 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.step-sp-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 20.4375rem;
+}
+
+.step-sp-text h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.25rem;
+  letter-spacing: 0rem;
+  color: #2e2e2e;
+}
+
+.step-sp-text p {
+  color: #5e6282;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.25rem;
+  letter-spacing: 0rem;
+}
+
+.step-part-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.step-2-box-content {
+  width: 23.125rem;
+  background: white;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 1.625rem;
+}
+
+.s-b-container {
+  position: relative;
+  padding: 1.5rem;
+}
+
+.s-b-container h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.375rem;
+  letter-spacing: 0.015rem;
+  color: #14183e;
+  margin-top: 1.625rem;
+  margin-bottom: 0.8125rem;
+}
+
+.s-b-img {
+  width: 20.0625rem;
+  height: 10.0625rem;
+  border-radius: 1.5rem;
+}
+
+.s-b-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.p-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.p-collection p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: -0.005rem;
+  color: #5e6282;
+  margin-bottom: 2.25rem;
+}
+
+.step-icon-collection {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2.5625rem;
+}
+
+.pplgoing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+
+.pplgoing .sub-ppl-going {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.pplgoing .sub-ppl-going h5 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: -0.02rem;
+  color: #5e6282;
+}
+
+.steps-floater {
+  position: absolute;
+  right: -150px;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1.5rem;
+  padding: 0.5rem;
+  -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+          box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+  border-radius: 1.125rem;
+}
+
+.s-f-img {
+  overflow: hidden;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: green;
+}
+
+.s-f-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.s-f-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.s-f-content h4 {
+  color: #5e6282;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1rem;
+  letter-spacing: -0.035rem;
+  margin-bottom: 4px;
+}
+
+.s-f-content h3 {
+  color: #14183e;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25rem;
+  letter-spacing: -0.015rem;
+  margin: 0;
+}
+
+.s-f-content p {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.0625rem;
+  letter-spacing: -0.055rem;
+  line-height: 1rem;
+  letter-spacing: -0.055rem;
+}
+
+.s-f-line {
+  margin-top: 4px;
+  width: 156px;
+  height: 5px;
+  position: relative;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #df6a53), color-stop(60%, #f5f5f5));
+  background: linear-gradient(to right, #df6a53 40%, #f5f5f5 60%);
+}
+
+@media only screen and (max-width: 467px) {
+  .steps-floater {
+    display: none;
+  }
+  .step-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .step-part-1 h3 {
+    text-align: center;
+  }
+  .step-part-1 h2 {
+    text-align: center;
+  }
+  .step-sub-part {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+  .steps {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .steps {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
