@@ -15,6 +15,7 @@ card.forEach(el => {
 let cardtoggle = false
 function cardToggler(e) {
   let pink = e.target.children[1]
+  
   pink.classList.toggle("show")
 }
 
@@ -46,49 +47,5 @@ function toggleMenu() {
 
 }
 
-
-
-
-// var reswidth =screen.width
-// if(reswidth>467){
-//   document.querySelector(".slider").classList.add("regular")
-
-// }else{
-//   document.querySelector(".slider").classList.remove("regular")
-
-// }
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
-
-
-//for image change
-
-var ProductImg = document.getElementById("productImg")
-
-
-function oe(id, src) {
-  ProductImg.src = src
-}
-
-
-
-
-
-// smallImg.map( el => {
-//   el.onclick = function() {
-//     console.log("cliccked")
-//   }
-// })
-
-
-// for(let i=0;i<smallImg.length;i++){
-//   smallImg[i].onClick=function(){
-//     console.log('clickked')
-//   }
-// }
 
 

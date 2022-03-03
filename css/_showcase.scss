@@ -48,7 +48,7 @@
 	h1 {
 		color: $Primary-dark-blue;
 		font-family: $Volkhov;
-		font-size: 5.25rem;
+		font-size: 4.8rem;
 		font-style: normal;
 		font-weight: 700;
 		line-height: 5.25rem;
@@ -139,6 +139,5 @@
 
 @media only screen and (min-width: 1025px) {
 	.showcase {
-		min-height: 100vh;
 	}
 }

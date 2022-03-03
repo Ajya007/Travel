@@ -36,13 +36,14 @@
 	height: 100px;
 	left: -50px;
 	bottom: -50px;
-	background: #df6951;
-	border-radius: 30px 0px 10px;
+
 	z-index: 1;
 	display: none;
-	@include easeOut;
+	transition: all 0.5s ease-in-out;
 
 	&.show {
+		background: #df6951;
+		border-radius: 30px 0px 10px;
 		display: block;
 	}
 }
@@ -61,7 +62,7 @@
 		border-radius: 2.25rem;
 		z-index: 2;
 		cursor: pointer;
-		@include easeOut;
+		transition: all 0.4s ease-in-out;
 
 		&:hover {
 			background: #ffffff;

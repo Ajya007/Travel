@@ -1,0 +1,76 @@
+.testimonials-headers {
+	h3 {
+		font-family: $Poppins;
+		font-size: 1.125rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 1.6875rem;
+		letter-spacing: 0rem;
+		color: $light-grey;
+		margin-bottom: 1rem;
+	}
+	h2 {
+		color: $header;
+		font-family: $Volkhov;
+		font-size: 3.125rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 4.0625rem;
+		letter-spacing: 0rem;
+		text-align: left;
+		max-width: 32rem;
+		margin-bottom: 3.5rem;
+	}
+}
+
+.testimonials-container {
+	display: flex;
+	gap: 2rem;
+}
+
+.testimonial-slider-wrapper {
+	max-width: 31.5rem;
+	background: #fff8ef;
+	box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02),
+		0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+		0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481),
+		0px 20px 13px rgba(0, 0, 0, 0.01),
+		0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185),
+		0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+	border-radius: 0.625rem;
+	.slider1-card {
+		position: relative;
+		padding: 2.125rem;
+	}
+
+	p {
+		max-width: 25.125rem;
+		text-align: left;
+	}
+}
+
+.text-grp {
+	margin-top: 2.125rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.3215rem;
+}
+
+.slider-icon-img {
+	position: absolute;
+	left: -2.2rem;
+	top: -2.2rem;
+	width: 4.25rem;
+	height: 4.25rem;
+	border-radius: 50%;
+	img {
+		width: 100%;
+		height: 100%;
+	}
+}
+.footer-part-2,
+.footer-part-3 {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
