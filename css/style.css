@@ -125,7 +125,7 @@ a {
   z-index: -1;
 }
 
-.showcase {
+.index-showcase {
   background-image: url("../images/showcase.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -133,7 +133,7 @@ a {
   z-index: 1;
 }
 
-.showcase .overlay {
+.index-showcase .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1531,5 +1531,21 @@ a {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+.about-showcase {
+  background-image: url("../images/test.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.about-showcase .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(36, 34, 38, 0.2);
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */
