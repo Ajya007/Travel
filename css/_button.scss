@@ -20,3 +20,20 @@
 	border: none;
 	border-radius: 0.75rem;
 }
+
+.sub-btn {
+	font-family: sans-serif;
+	font-size: 1rem;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 1.48rem;
+	letter-spacing: 0rem;
+	text-align: center;
+	color: $white;
+	background: #df6951;
+	box-shadow: 4px 4px 24px -7px rgba(0, 0, 0, 0.25);
+	border-radius: 0.625rem;
+	padding: 1.375rem 3.125rem;
+	outline: none;
+	border: none;
+}

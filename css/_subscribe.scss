@@ -1,0 +1,113 @@
+.subscribe-container {
+	position: relative;
+	background: #d5d1e2;
+	border-radius: 20px 129px 20px 20px;
+
+	h3 {
+		position: relative;
+		z-index: 2;
+		max-width: 53.6875rem;
+		font-family: $Poppins;
+		font-size: 2.0625rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 3.375rem;
+		letter-spacing: 0em;
+		text-align: center;
+		color: $light-grey;
+	}
+}
+
+.message-icon {
+	position: absolute;
+	top: -5px;
+	right: -5px;
+	z-index: 2;
+}
+.right-round {
+	position: absolute;
+	left: -105px;
+	bottom: 0;
+	z-index: 1;
+}
+
+.left-round {
+	position: absolute;
+	right: 5px;
+	top: 0;
+	z-index: 0;
+}
+
+.subscribe-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 4.5rem;
+	padding: 5rem 0rem;
+}
+.subscribe-form-wrapper {
+	max-width: 40rem;
+}
+.subscribe-form {
+	position: relative;
+	z-index: 2;
+	display: flex;
+	width: 100%;
+	gap: 2rem;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	input[type="email"] {
+		font-family: $Poppins;
+		font-size: 0.9rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1rem;
+		letter-spacing: 0rem;
+		text-align: left;
+		color: $light-grey;
+	}
+	input {
+		background: #ffffff;
+		box-shadow: 4px 4px 24px -7px rgba(0, 0, 0, 0.25);
+		border-radius: 50px;
+		width: 100%;
+		height: 4.25rem;
+		outline: none;
+		border: none;
+		width: 421px;
+		padding: 1rem;
+		&::placeholder {
+			font-family: $Poppins;
+			font-size: 0.9rem;
+			font-style: normal;
+			font-weight: 400;
+			line-height: 1rem;
+			letter-spacing: 0rem;
+			text-align: left;
+		}
+	}
+}
+
+//mobile.....................................................................................................
+
+@media only screen and (max-width: 467px) {
+	.subscribe-form {
+		justify-content: center;
+		input {
+			width: 100%;
+		}
+	}
+}
+
+//tablets..............................................................................................................
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+	.subscribe-form {
+		justify-content: center;
+		input {
+			width: 100%;
+		}
+	}
+}
