@@ -132,6 +132,9 @@
 //mobile.....................................................................................................
 
 @media only screen and (max-width: 467px) {
+	.powered {
+		padding: 1rem;
+	}
 	.testimonials-container {
 		padding: 1rem 1rem;
 		display: flex;
