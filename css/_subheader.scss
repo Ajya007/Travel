@@ -13,10 +13,11 @@
 
 .subheader-contact {
 	display: flex;
-	gap: 2rem;
+	gap: 1.5rem;
 	.s-c-1,
 	.s-c-2,
 	.s-c-3 {
+		white-space: nowrap;
 		display: flex;
 		gap: 0.5rem;
 		font-size: 0.75rem;
