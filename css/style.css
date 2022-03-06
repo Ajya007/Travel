@@ -29,7 +29,7 @@ a {
           box-sizing: border-box;
   border-radius: 5px;
   background-color: transparent;
-  color: #fff3e6;
+  color: white;
   padding: 0.375rem 0.75rem;
   font-family: "Poppins", sans-serif;
   font-size: 0.875rem;
@@ -55,7 +55,7 @@ a {
   line-height: 1.48rem;
   letter-spacing: 0rem;
   text-align: center;
-  color: #fff3e6;
+  color: white;
   background: #df6951;
   -webkit-box-shadow: 4px 4px 24px -7px rgba(0, 0, 0, 0.25);
           box-shadow: 4px 4px 24px -7px rgba(0, 0, 0, 0.25);
@@ -67,7 +67,7 @@ a {
 
 .subheader {
   background-color: #0129a2;
-  color: #fff3e6;
+  color: white;
   font-family: "Roboto", sans-serif;
 }
 
@@ -181,7 +181,7 @@ a {
   line-height: 1.16875;
   letter-spacing: 0rem;
   text-align: left;
-  color: #fff3e6;
+  color: white;
   max-width: 22.8125rem;
 }
 
@@ -198,7 +198,7 @@ a {
 }
 
 .showcase-content-text p {
-  color: #fff3e6;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 0.9375rem;
   font-style: normal;
@@ -305,7 +305,7 @@ a {
 }
 
 .nav a {
-  color: #fff3e6;
+  color: white;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -342,7 +342,7 @@ a {
 }
 
 .menu-btn .btn-line {
-  background-color: #fff3e6;
+  background-color: white;
   width: 1.75rem;
   height: 0.25rem;
   margin: 0.26rem;
@@ -471,6 +471,29 @@ a {
   .header-container {
     padding: 1rem;
   }
+  .nav a:hover {
+    color: #0129a2;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .nav a {
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .nav a:hover {
+    color: #0129a2;
+  }
+  .contact-btn {
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .contact-btn:hover {
+    background-color: #0129a2;
+    color: #ffffff;
+    border: 1px solid #0129a2;
+  }
 }
 
 .floater-form {
@@ -492,7 +515,7 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 1rem;
-  background: #fff3e6;
+  background: white;
   -webkit-box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.1);
   border-radius: 12px;
@@ -591,7 +614,7 @@ a {
   font-weight: 600;
   line-height: 1.1675rem;
   letter-spacing: 0.02rem;
-  color: #fff3e6;
+  color: white;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -1352,6 +1375,11 @@ a {
   }
 }
 
+.testimonials {
+  overflow: hidden;
+  padding: 2rem 0rem;
+}
+
 .testimonials-headers h3 {
   font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
@@ -1380,7 +1408,52 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.testimonials-container .slider {
+  width: 50%;
+}
+
+.testimonials-container .slick-slider {
+  margin: 0 -15px;
+}
+
+.testimonials-container .slick-slide {
+  padding: 35px;
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.testimonials-container .slick-next {
+  background-color: transparent;
+  font-size: 1.5rem;
+  position: absolute;
+  right: 5px;
+  top: 40%;
+  z-index: 4;
+  outline: none;
+  border: none;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  cursor: pointer;
+}
+
+.testimonials-container .slick-prev {
+  background-color: transparent;
+  position: absolute;
+  font-size: 1.5rem;
+  right: 5px;
+  top: 60%;
+  z-index: 4;
+  outline: none;
+  border: none;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  cursor: pointer;
 }
 
 .testimonial-slider-wrapper {
@@ -1437,6 +1510,91 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 2rem;
+}
+
+.powered {
+  padding: 2rem 0;
+}
+
+.powered-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 467px) {
+  .testimonials-container {
+    padding: 1rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .testimonials-container .slider {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+  .testimonials-container {
+    padding: 1rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .testimonials-container .slider {
+    width: 100%;
+  }
+  .powered-slider {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .testimonials-container {
+    padding: 1rem 1rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .testimonials-container .slider {
+    width: 100%;
+  }
+  .powered-slider {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.subscribe {
+  overflow: hidden;
+  padding: 2rem 0rem;
 }
 
 .subscribe-container {
@@ -1609,11 +1767,11 @@ a {
 .footer {
   overflow: hidden;
   background-color: #00229e;
-  color: #fff3e6;
+  color: white;
 }
 
 .footer a {
-  color: #fff3e6;
+  color: white;
   font-family: "Poppins", sans-serif;
   font-size: 1.125rem;
   font-style: normal;
@@ -1755,27 +1913,27 @@ a {
 .f-e-l-1 {
   width: 25%;
   height: 0.1rem;
-  background-color: #fff3e6;
+  background-color: white;
 }
 
 .f-e-l-2 {
   width: 10%;
   height: 0.1rem;
-  background-color: #fff3e6;
+  background-color: white;
   margin-left: 0.5rem;
 }
 
 .f-e-l-3 {
   width: 10%;
   height: 0.1rem;
-  background-color: #fff3e6;
+  background-color: white;
   margin-right: 0.5rem;
 }
 
 .f-e-l-4 {
   width: 25%;
   height: 0.1rem;
-  background-color: #fff3e6;
+  background-color: white;
 }
 
 @media only screen and (max-width: 467px) {

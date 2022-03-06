@@ -140,4 +140,34 @@
 	.header-container {
 		padding: 1rem;
 	}
+	.nav {
+		a {
+			&:hover {
+				color: $purple;
+			}
+		}
+	}
+}
+
+//For larger devices.....................................................................................................
+
+@media only screen and (min-width: 1025px) {
+	.nav {
+		a {
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				color: $purple;
+			}
+		}
+	}
+	.contact-btn {
+		cursor: pointer;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			background-color: $purple;
+			color: #ffffff;
+			border: 1px solid $purple;
+		}
+	}
 }

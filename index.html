@@ -799,9 +799,9 @@
 									<input type="date" id="start" name="trip-start" />
 								</div>
 								<div class="part-2-sub">
-									<label for="start">Start date:</label>
+									<label for="end">End date:</label>
 
-									<input type="date" id="start" name="trip-start" />
+									<input type="date" id="end" name="trip-end" />
 								</div>
 							</div>
 						</div>
@@ -1685,7 +1685,7 @@
 					<h3>TESTIMONIALS</h3>
 					<h2>What People Say About Us.</h2>
 				</div>
-				<div class="testimonial-cards one-time">
+				<div class="testimonial-cards slider">
 					<div class="testimonial-slider1">
 						<div class="testimonial-slider-wrapper">
 							<div class="slider1-card">
@@ -1721,6 +1721,27 @@
 								</div>
 							</div>
 						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Powered Section 👍 -->
+		<div class="powred">
+			<div class="container">
+				<div class="powered-slider">
+					<div class="pow-box"><img src="./svg/axon.svg" alt="axon" /></div>
+					<div class="pow-box">
+						<img src="./svg/jetstar.svg" alt="jetstar" />
+					</div>
+					<div class="pow-box">
+						<img src="./svg/expedia.svg" alt="expedia" />
+					</div>
+					<div class="pow-box">
+						<img src="./svg/quantas.svg" alt="quantas" />
+					</div>
+					<div class="pow-box">
+						<img src="./svg/alatalia.svg" alt="alatalia" />
 					</div>
 				</div>
 			</div>
@@ -1833,34 +1854,52 @@
 				autoplaySpeed: 2000,
 				arrows: false,
 				dots: true,
+				responsive: [
+					{
+						breakpoint: 825,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1,
+						},
+					},
+					{
+						breakpoint: 467,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+						},
+					},
+				],
 			});
-			if (window.matchMedia("(max-width: 468px)").matches) {
-				$(".slider").slick({
-					dots: false,
-					infinite: true,
-					autoplay: true,
-					slidesToShow: 1,
-					slidesToScroll: 1,
-					arrows: false,
-					responsive: [
-						{
-							breakpoint: 1024,
-							settings: "unslick",
+			$(".slider").slick({
+				dots: false,
+				infinite: true,
+				autoplay: true,
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				arrows: true,
+				vertical: true,
+				responsive: [
+					{
+						breakpoint: 825,
+						settings: {
+							arrows: false,
 						},
-						{
-							breakpoint: 600,
-							settings: "unslick",
+					},
+					{
+						breakpoint: 467,
+						settings: {
+							arrows: false,
 						},
-						{
-							breakpoint: 467,
-							settings: {
-								slidesToShow: 1,
-								slidesToScroll: 1,
-							},
-						},
-					],
-				});
-			}
+					},
+				],
+			});
+		</script>
+		<script>
+			const prev = document.querySelector(".slick-prev");
+			prev.textContent = ">";
+			const next = document.querySelector(".slick-next");
+			next.textContent = "<";
 		</script>
 	</body>
 </html>

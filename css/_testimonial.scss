@@ -1,3 +1,9 @@
+.testimonials {
+	overflow: hidden;
+	padding: 2rem 0rem;
+}
+.slider {
+}
 .testimonials-headers {
 	h3 {
 		font-family: $Poppins;
@@ -25,7 +31,45 @@
 
 .testimonials-container {
 	display: flex;
-	gap: 2rem;
+	gap: 1rem;
+	flex-wrap: wrap;
+	.slider {
+		width: 50%;
+	}
+
+	.slick-slider {
+		margin: 0 -15px;
+	}
+	.slick-slide {
+		padding: 35px;
+		text-align: center;
+		margin-right: 15px;
+		margin-left: 15px;
+	}
+	.slick-next {
+		background-color: transparent;
+		font-size: 1.5rem;
+		position: absolute;
+		right: 5px;
+		top: 40%;
+		z-index: 4;
+		outline: none;
+		border: none;
+		transform: rotate(90deg);
+		cursor: pointer;
+	}
+	.slick-prev {
+		background-color: transparent;
+		position: absolute;
+		font-size: 1.5rem;
+		right: 5px;
+		top: 60%;
+		z-index: 4;
+		outline: none;
+		border: none;
+		transform: rotate(90deg);
+		cursor: pointer;
+	}
 }
 
 .testimonial-slider-wrapper {
@@ -73,4 +117,64 @@
 	display: flex;
 	flex-direction: column;
 	gap: 2rem;
+}
+.powered {
+	padding: 2rem 0;
+}
+.powered-slider {
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+//mobile.....................................................................................................
+
+@media only screen and (max-width: 467px) {
+	.testimonials-container {
+		padding: 1rem 1rem;
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+		.slider {
+			width: 100%;
+		}
+	}
+}
+
+//tablets..............................................................................................................
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+	.testimonials-container {
+		padding: 1rem 1rem;
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+		.slider {
+			width: 100%;
+		}
+	}
+	.powered-slider {
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+//for small screen laptops.......................................................................................
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+	.testimonials-container {
+		padding: 1rem 1rem;
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+		.slider {
+			width: 100%;
+		}
+	}
+	.powered-slider {
+		justify-content: center;
+		align-items: center;
+	}
 }
