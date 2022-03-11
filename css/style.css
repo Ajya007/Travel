@@ -65,6 +65,87 @@ a {
   border: none;
 }
 
+.Blue-read-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  background-color: #012aa1;
+  border-radius: 0.62rem;
+  padding: 0.625rem 1rem;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0.9375rem;
+  letter-spacing: 0rem;
+}
+
+.read-all-btn {
+  background-color: rgba(1, 41, 162, 0.75);
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: none;
+  border-radius: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.3125rem;
+  letter-spacing: 0rem;
+  color: white;
+}
+
+.global-card {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  width: 24.0625rem;
+  overflow: hidden;
+}
+
+.global-card-image {
+  width: 24.0625rem;
+  height: 16.125rem;
+}
+
+.global-card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top center;
+     object-position: top center;
+}
+
+.global-card-texxts {
+  padding: 1.4375rem 1.5625rem;
+}
+
+.global-card-texxts h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4rem;
+  letter-spacing: 0rem;
+  color: #5e6282;
+  margin-bottom: 0.4375rem;
+}
+
+.global-card-texxts p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4rem;
+  letter-spacing: 0rem;
+  color: #2e2e2e;
+  margin-bottom: 0.8125rem;
+}
+
 .subheader {
   background-color: #0129a2;
   color: white;
@@ -1963,20 +2044,152 @@ a {
   }
 }
 
-.about-showcase {
-  background-image: url("../images/test.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 1;
+.about-showcase-content-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 6.125rem;
+  padding-bottom: 10rem;
+  gap: 1rem;
 }
 
-.about-showcase .overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(36, 34, 38, 0.2);
-  z-index: -1;
+.about-showcase-content-text h1 {
+  color: white;
+  font-family: "Volkhov", serif;
+  font-size: 4.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.25rem;
+  letter-spacing: -0.04rem;
+}
+
+.about-showcase-content-text p {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2.5rem;
+  letter-spacing: 0rem;
+  color: white;
+}
+
+.started-different-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  padding: 6.3125rem 0rem;
+}
+
+.s-d-section-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 3.125rem;
+}
+
+.s-d-section-1 img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.s-d-section-1 .sub-part {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.75rem;
+}
+
+.s-d-section-1 .sub-part h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 3rem;
+  letter-spacing: 0rem;
+  color: #5e6282;
+}
+
+.s-d-section-1 .sub-part p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: 0rem;
+  color: #3f3d57;
+}
+
+.aboutUs-subcontent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+}
+
+.aboutUs-subcontent .part-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.625rem;
+}
+
+.aboutUs-subcontent .part-1 p {
+  max-width: 36.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.a-l-n-container h3 {
+  text-align: center;
+  font-family: "Volkhov", serif;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.6875rem;
+  letter-spacing: 0rem;
+  color: #14183e;
+  padding: 1.6875rem 0rem;
+}
+
+.a-l-n-cards {
+  padding: 1.5rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .contact-showcase {
