@@ -31,6 +31,7 @@
 .started-different-container {
 	display: flex;
 	justify-content: space-between;
+
 	gap: 1rem;
 	padding: 6.3125rem 0rem;
 }
@@ -71,6 +72,7 @@
 	display: flex;
 	justify-content: space-between;
 	gap: 1rem;
+	flex-wrap: wrap;
 	.part-1 {
 		display: flex;
 		flex-direction: column;
@@ -105,6 +107,64 @@
 .a-l-n-cards {
 	padding: 1.5rem 2rem;
 	display: flex;
-	gap: 1rem;
+	gap: 2rem;
 	justify-content: space-between;
+}
+
+//mobile.....................................................................................................
+
+@media only screen and (max-width: 467px) {
+	.started-different-container {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		flex-wrap: wrap;
+	}
+	.aboutUs-subcontent {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		justify-content: center;
+		align-items: center;
+		.part-1 {
+			justify-content: center;
+			align-items: center;
+			p {
+				text-align: center;
+			}
+		}
+	}
+	.a-l-n-cards {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+//tablets..............................................................................................................
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+	.started-different-container {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		flex-wrap: wrap;
+	}
+	.aboutUs-subcontent {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		justify-content: center;
+		align-items: center;
+		.part-1 {
+			justify-content: center;
+			align-items: center;
+			p {
+				text-align: center;
+			}
+		}
+	}
+	.a-l-n-cards {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
 }

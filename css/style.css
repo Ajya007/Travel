@@ -69,6 +69,12 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 1rem;
   background-color: #012aa1;
   border-radius: 0.62rem;
@@ -82,6 +88,13 @@ a {
   font-weight: 400;
   line-height: 0.9375rem;
   letter-spacing: 0rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.Blue-read-btn:hover {
+  background-color: rgba(1, 41, 162, 0.75);
 }
 
 .read-all-btn {
@@ -97,6 +110,17 @@ a {
   line-height: 1.3125rem;
   letter-spacing: 0rem;
   color: white;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.read-all-btn:hover {
+  background-color: #012aa1;
+}
+
+.submit-btn {
+  background-color: #0129a2;
 }
 
 .global-card {
@@ -104,6 +128,8 @@ a {
   border-radius: 1.5rem;
   width: 24.0625rem;
   overflow: hidden;
+  -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+          filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
 }
 
 .global-card-image {
@@ -2145,6 +2171,8 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .aboutUs-subcontent .part-1 {
@@ -2186,10 +2214,88 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media only screen and (max-width: 467px) {
+  .started-different-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .aboutUs-subcontent {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutUs-subcontent .part-1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutUs-subcontent .part-1 p {
+    text-align: center;
+  }
+  .a-l-n-cards {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+  .started-different-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .aboutUs-subcontent {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutUs-subcontent .part-1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aboutUs-subcontent .part-1 p {
+    text-align: center;
+  }
+  .a-l-n-cards {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .contact-showcase {
@@ -2230,5 +2336,204 @@ a {
   line-height: 5.25rem;
   letter-spacing: -0.04rem;
   text-align: center;
+}
+
+.contatPageContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 4rem 0rem;
+}
+
+.c-u-s-2 {
+  background-color: #fff3e6;
+}
+
+.contact-form {
+  padding: 3.75rem 3.125rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.contact-form input {
+  border-radius: 0.5rem;
+  background-color: #e4e2e2;
+  border: none;
+  outline: none;
+  padding: 1rem;
+}
+
+.contact-form input::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.contact-form input:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.contact-form input::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.contact-form input::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-control input {
+  width: 100%;
+}
+
+.form-control-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-control-3 textarea {
+  width: 100%;
+  min-height: 11.875rem;
+  resize: none;
+  outline: none;
+  background-color: #e4e2e2;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.form-control-3 textarea::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.form-control-3 textarea:-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.form-control-3 textarea::-ms-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.form-control-3 textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+.contact-form-submit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact-form-submit .submit-btn {
+  width: 100%;
+  padding: 0.65rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-family: Poppins;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.25rem;
+  letter-spacing: 0rem;
+  color: white;
+}
+
+.c-u-s-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.75rem;
+}
+
+.c-u-s-1 h3 {
+  font-family: "Volkhov", serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 62px;
+  letter-spacing: 0rem;
+  color: #0129a2;
+}
+
+.c-u-s-1 h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0rem;
+  color: #0129a2;
+}
+
+.c-u-s-1 .mid-pard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.5rem;
+}
+
+.c-u-s-1 .m-p-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.c-u-s-1 .m-p-collection p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0rem;
+  text-align: left;
+  color: black;
+}
+
+.c-map {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: orange;
+  width: 100%;
+  min-height: 301px;
+}
+
+.c-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.tourPage-heading h1 {
+  max-width: 50.4375rem;
+  text-align: center;
+  line-height: 1.2;
 }
 /*# sourceMappingURL=style.css.map */
