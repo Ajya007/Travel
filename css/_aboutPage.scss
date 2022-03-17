@@ -111,6 +111,7 @@
 	justify-content: space-between;
 }
 
+
 //mobile.....................................................................................................
 
 @media only screen and (max-width: 467px) {
@@ -137,6 +138,37 @@
 		padding-right: 1rem;
 		flex-wrap: wrap;
 		justify-content: center;
+	}
+
+	.about-showcase-content-text {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		justify-content: flex-start;
+		align-items: flex-start;
+		h1 {
+			color: $white;
+			font-family: $Volkhov;
+			font-size: 3.8rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 5.25rem;
+			letter-spacing: -0.04rem;
+			text-align: center;
+
+			width: 100%;
+		}
+		p {
+			font-family: $Poppins;
+			font-size: 1.5rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 2.5rem;
+			letter-spacing: 0rem;
+			text-align: center;
+
+			color: $white;
+			width: 100%;
+		}
 	}
 }
 
@@ -166,5 +198,36 @@
 		padding-right: 1rem;
 		flex-wrap: wrap;
 		justify-content: center;
+	}
+
+	.about-showcase-content-text {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		justify-content: flex-start;
+		align-items: flex-start;
+		h1 {
+			color: $white;
+			font-family: $Volkhov;
+			font-size: 3.8rem;
+			font-style: normal;
+			font-weight: 700;
+			line-height: 5.25rem;
+			letter-spacing: -0.04rem;
+			text-align: center;
+
+			width: 100%;
+		}
+		p {
+			font-family: $Poppins;
+			font-size: 1.5rem;
+			font-style: normal;
+			font-weight: 600;
+			line-height: 2.5rem;
+			letter-spacing: 0rem;
+			text-align: center;
+
+			color: $white;
+			width: 100%;
+		}
 	}
 }
