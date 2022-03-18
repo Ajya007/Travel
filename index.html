@@ -95,7 +95,9 @@
 						</div>
 						<div class="end">
 							<img src="./images/subHeader/search.png" alt="search" />
-							<button class="contact-btn">Contact Us</button>
+							<a href="contact.html"
+								><button class="contact-btn">Contact Us</button></a
+							>
 						</div>
 					</div>
 				</div>
@@ -1021,20 +1023,20 @@
 		<!-- Powered Section 👍 -->
 		<div class="powred">
 			<div class="container">
-				<div class="powered-slider">
-					<div class="pow-box">
+				<div class="powered-slider infinite-slidess">
+					<div class="pow-box pow-box-1">
 						<img src="./images/powered/axon.png" alt="axon" />
 					</div>
-					<div class="pow-box">
+					<div class="pow-box pow-box-2">
 						<img src="./images/powered/jetstar.png" alt="jetstar" />
 					</div>
-					<div class="pow-box">
+					<div class="pow-box pow-box-3">
 						<img src="./images/powered/expedia.png" alt="expedia" />
 					</div>
-					<div class="pow-box">
+					<div class="pow-box pow-box-4">
 						<img src="./images/powered/quantas.png" alt="quantas" />
 					</div>
-					<div class="pow-box">
+					<div class="pow-box pow-box-5">
 						<img src="./images/powered/alitalia.png" alt="alatalia" />
 					</div>
 				</div>
@@ -1186,6 +1188,34 @@
 						breakpoint: 467,
 						settings: {
 							arrows: false,
+						},
+					},
+				],
+			});
+
+			$(".infinite-slidess").slick({
+				speed: 5000,
+				autoplay: true,
+				autoplaySpeed: 0,
+				cssEase: "linear",
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				infinite: true,
+				swipeToSlide: true,
+				centerMode: true,
+				focusOnSelect: true,
+				arrows: false,
+				responsive: [
+					{
+						breakpoint: 750,
+						settings: {
+							slidesToShow: 3,
+						},
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							slidesToShow: 2,
 						},
 					},
 				],

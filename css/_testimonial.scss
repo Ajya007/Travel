@@ -181,3 +181,30 @@
 		align-items: center;
 	}
 }
+
+.pow-box {
+	width: 241px;
+	height: 86px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	img {
+		width: 50%;
+		height: 100%;
+		object-fit: contain;
+		margin: auto;
+	}
+}
+
+.pow-box-1,
+.pow-box-2,
+.pow-box-3,
+.pow-box-4,
+.pow-box-5 {
+	border-radius: 10px;
+	@include easeOut;
+	cursor: pointer;
+	&:hover {
+		background-color: hsla(22, 100%, 84%, 1);
+	}
+}

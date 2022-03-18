@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   scroll-behavior: smooth;
 }
@@ -36,7 +37,7 @@ a {
   font-weight: 500;
   line-height: 1.3125rem;
   letter-spacing: 0rem;
-  text-align: left;
+  text-align: center;
 }
 
 .btn-1 {
@@ -702,11 +703,16 @@ a {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .end {
-    display: none;
-  }
   .header-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
     padding: 1rem;
+  }
+  .nav-end {
+    gap: 2rem;
   }
   .nav a:hover {
     color: #0129a2;
@@ -1790,6 +1796,47 @@ a {
   }
 }
 
+.pow-box {
+  width: 241px;
+  height: 86px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pow-box img {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin: auto;
+}
+
+.pow-box-1,
+.pow-box-2,
+.pow-box-3,
+.pow-box-4,
+.pow-box-5 {
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+  cursor: pointer;
+}
+
+.pow-box-1:hover,
+.pow-box-2:hover,
+.pow-box-3:hover,
+.pow-box-4:hover,
+.pow-box-5:hover {
+  background-color: #ffcbad;
+}
+
 .subscribe {
   overflow: hidden;
   padding: 2rem 0rem;
@@ -2157,6 +2204,87 @@ a {
   }
 }
 
+.aboutSlider .slick-slider {
+  margin: 0 -15px;
+}
+
+.aboutSlider .slick-slide {
+  padding: 10px;
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.aboutSlider .slick-dots {
+  position: absolute;
+  bottom: -45px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+
+.aboutSlider .slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.aboutSlider .slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.aboutSlider .slick-dots li button:hover,
+.aboutSlider .slick-dots li button:focus {
+  outline: none;
+}
+
+.aboutSlider .slick-dots li button:hover:before,
+.aboutSlider .slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.aboutSlider .slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 5px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #3f3535;
+  border-radius: 50%;
+}
+
+.aboutSlider .slick-dots li.slick-active button:before {
+  color: black;
+  opacity: 0.75;
+}
+
 .about-showcase-content-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2282,6 +2410,10 @@ a {
   line-height: 1.5rem;
   letter-spacing: 0em;
   text-align: left;
+}
+
+.a-l-n-container {
+  padding: 5rem 0rem;
 }
 
 .a-l-n-container h3 {
@@ -2732,6 +2864,87 @@ a {
   max-width: 50.4375rem;
   text-align: center;
   line-height: 1.2;
+}
+
+.adventureSlider .slick-slider {
+  margin: 0 -15px;
+}
+
+.adventureSlider .slick-slide {
+  padding: 10px;
+  text-align: center;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.adventureSlider .slick-dots {
+  position: absolute;
+  bottom: -45px;
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+}
+
+.adventureSlider .slick-dots li {
+  position: relative;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.adventureSlider .slick-dots li button {
+  border: 0;
+  background: transparent;
+  display: block;
+  height: 20px;
+  width: 20px;
+  outline: none;
+  line-height: 0;
+  font-size: 0;
+  color: transparent;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.adventureSlider .slick-dots li button:hover,
+.adventureSlider .slick-dots li button:focus {
+  outline: none;
+}
+
+.adventureSlider .slick-dots li button:hover:before,
+.adventureSlider .slick-dots li button:focus:before {
+  opacity: 1;
+}
+
+.adventureSlider .slick-dots li button:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "•";
+  width: 20px;
+  height: 20px;
+  font-family: "slick";
+  font-size: 6px;
+  line-height: 5px;
+  text-align: center;
+  color: black;
+  opacity: 0.25;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #3f3535;
+  border-radius: 50%;
+}
+
+.adventureSlider .slick-dots li.slick-active button:before {
+  color: black;
+  opacity: 0.75;
 }
 
 .extra h2 {
