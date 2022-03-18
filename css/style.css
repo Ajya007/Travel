@@ -23,10 +23,10 @@ a {
 }
 
 .contact-btn {
-  border: 1px solid #fff2e3;
+  border: 0.0625rem solid #fff2e3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   background-color: transparent;
   color: white;
   padding: 0.375rem 0.75rem;
@@ -56,8 +56,8 @@ a {
   text-align: center;
   color: white;
   background: #df6951;
-  -webkit-box-shadow: 4px 4px 24px -7px rgba(0, 0, 0, 0.25);
-          box-shadow: 4px 4px 24px -7px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0.25rem 0.25rem 1.5rem -0.4375rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0.25rem 0.25rem 1.5rem -0.4375rem rgba(0, 0, 0, 0.25);
   border-radius: 0.625rem;
   padding: 1.375rem 3.125rem;
   outline: none;
@@ -122,17 +122,40 @@ a {
   background-color: #0129a2;
 }
 
+.Discount-btn {
+  background: #0129a2;
+  border-radius: 0.3125rem;
+  padding: 1rem 0;
+  min-width: 17.5625rem;
+  border: none;
+  outline: none;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.6rem;
+  letter-spacing: 0rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+
+.Discount-btn:hover {
+  background-color: rgba(1, 41, 162, 0.75);
+}
+
 .global-card {
   background: #ffffff;
   border-radius: 1.5rem;
-  width: 24.0625rem;
+  width: 22.8125rem;
   overflow: hidden;
   -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
           filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
 }
 
 .global-card-image {
-  width: 24.0625rem;
+  width: 22.8125rem;
   height: 16.125rem;
 }
 
@@ -171,17 +194,111 @@ a {
   margin-bottom: 0.8125rem;
 }
 
+.discount-section {
+  margin-top: 5rem;
+}
+
 .discount-container {
   background-image: url("../images/discount.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .disount-blue {
   position: absolute;
   right: 0;
   top: 0;
+}
+
+.discount-part-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.9rem;
+  padding: 2.1875rem;
+}
+
+.discount-part-1 .sub-prt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.discount-part-1 .sub-prt img {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.discount-part-1 .sub-prt p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2.2rem;
+  letter-spacing: 0rem;
+  color: #1a1a1a;
+}
+
+.discount-part-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.8rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.625rem 0rem;
+}
+
+.discount-part-2 h3 {
+  font-family: "Volkhov", serif;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 5.625rem;
+  letter-spacing: 0rem;
+  color: #2e2e2e;
+}
+
+@media only screen and (max-width: 467px) {
+  .discount-container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .discount-part-2 h3 {
+    font-family: "Volkhov", serif;
+    font-size: 2.75rem;
+  }
+}
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+  .discount-part-2 h3 {
+    font-family: "Volkhov", serif;
+    font-size: 3rem;
+  }
 }
 
 .subheader {
@@ -841,6 +958,7 @@ a {
   top: 0;
   width: 12.8125rem;
   height: 14rem;
+  z-index: -1;
 }
 
 .services .services-bottom {
@@ -967,6 +1085,10 @@ a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .services-top,
+  .services-bottom {
+    display: none;
   }
 }
 
@@ -1415,6 +1537,27 @@ a {
 
 @media only screen and (min-width: 469px) and (max-width: 768px) {
   .steps {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .step-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .step-part-1 h3 {
+    text-align: center;
+  }
+  .step-part-1 h2 {
+    text-align: center;
+  }
+  .step-sub-part {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -2456,7 +2599,7 @@ a {
   padding: 0.65rem;
   outline: none;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125rem;
   font-family: Poppins;
   font-size: 1.5rem;
   font-style: normal;
@@ -2479,20 +2622,20 @@ a {
 
 .c-u-s-1 h3 {
   font-family: "Volkhov", serif;
-  font-size: 50px;
+  font-size: 3.125rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 62px;
+  line-height: 3.875rem;
   letter-spacing: 0rem;
   color: #0129a2;
 }
 
 .c-u-s-1 h4 {
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 600;
-  line-height: 18px;
+  line-height: 1.125rem;
   letter-spacing: 0rem;
   color: #0129a2;
 }
@@ -2517,10 +2660,10 @@ a {
 
 .c-u-s-1 .m-p-collection p {
   font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-style: normal;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 1.6875rem;
   letter-spacing: 0rem;
   text-align: left;
   color: black;
@@ -2531,7 +2674,7 @@ a {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  min-height: 301px;
+  min-height: 18.8125rem;
 }
 
 .c-map iframe {
@@ -2540,12 +2683,20 @@ a {
 }
 
 @media only screen and (max-width: 467px) {
+  .contact-showcase-content-text h1 {
+    font-size: 3.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .contatPageContainer {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
+  }
+  .contact-form {
+    padding: 1.75rem 1.125rem;
   }
 }
 
@@ -2556,6 +2707,17 @@ a {
     padding-left: 2rem;
     padding-right: 2rem;
     text-align: center;
+  }
+  .mid-pard {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -2570,6 +2732,10 @@ a {
   max-width: 50.4375rem;
   text-align: center;
   line-height: 1.2;
+}
+
+.extra h2 {
+  max-width: 39.125rem;
 }
 
 .adventure-start {
@@ -2647,6 +2813,13 @@ a {
 
 .ad-start-box-1 .ad-start-sub-part-1 p {
   margin: 0.3125rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: black;
 }
 
 .ad-start-box-1 .ad-start-sub-part-2 {
@@ -2668,6 +2841,13 @@ a {
 
 .ad-start-box-1 .ad-start-sub-part-2 p {
   margin: 0.3125rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: black;
 }
 
 .ad-start-box-2 {
@@ -2698,6 +2878,13 @@ a {
 
 .ad-start-box-2 .ad-start-sub-part-1 p {
   margin: 0.3125rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: black;
 }
 
 .ad-start-box-2 .ad-start-sub-part-2 {
@@ -2719,6 +2906,13 @@ a {
 
 .ad-start-box-2 .ad-start-sub-part-2 p {
   margin: 0.3125rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: black;
 }
 
 .ad-start-box-3 {
@@ -2750,11 +2944,18 @@ a {
 
 .ad-start-box-3 .ad-start-sub-part-1 p {
   margin: 0.3125rem 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: black;
 }
 
 .ad-start-img {
-  width: 250px;
-  height: 250px;
+  width: 15.625rem;
+  height: 15.625rem;
 }
 
 .ad-start-img img {
@@ -2769,10 +2970,10 @@ a {
 
 @media only screen and (max-width: 467px) {
   .a-point-1 {
-    max-width: 370px;
+    max-width: 23.125rem;
   }
   .a-point-2 {
-    max-width: 370px;
+    max-width: 23.125rem;
   }
   .adventure-start h2 {
     font-size: 1.3rem;
@@ -2890,5 +3091,167 @@ a {
   .ad-start-box-3 .ad-start-sub-part-1 {
     padding-bottom: 5.5rem;
   }
+}
+
+.award-page-container h2 {
+  font-family: "Volkhov", serif;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0rem;
+  color: #2e2e2e;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 0.5rem;
+}
+
+.award-card {
+  background: #ffffff;
+  border-radius: 1.5rem;
+  width: 22.8125rem;
+  overflow: hidden;
+  position: relative;
+  -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+          filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+}
+
+.award-date {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 0.75rem;
+  padding: 0.625rem;
+}
+
+.award-card-image {
+  width: 22.8125rem;
+  height: 16.125rem;
+}
+
+.award-card-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.award-card-texxts {
+  padding: 1.4375rem 1.5625rem;
+}
+
+.award-card-texxts h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.4rem;
+  letter-spacing: 0rem;
+  color: #5e6282;
+  margin-bottom: 0.4375rem;
+  text-align: center;
+}
+
+.award-card-texxts p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4rem;
+  letter-spacing: 0rem;
+  color: #2e2e2e;
+  margin-bottom: 0.8125rem;
+}
+
+.award-page-gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 467px) {
+  .awardPageHeader h1 {
+    font-size: 3.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.calander-container h2 {
+  font-family: "Volkhov", serif;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.0625rem;
+  letter-spacing: 0rem;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  color: #2e2e2e;
+}
+
+.calander-image-collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.calander-image {
+  width: 22.8125rem;
+  height: 30.4375rem;
+  -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+          filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+}
+
+.calander-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.galleryPageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.galleryPageCard {
+  width: 22.8125rem;
+}
+
+.galleryPageCard .gpc-img {
+  width: 22.8125rem;
+}
+
+.galleryPageCard .gpc-img img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

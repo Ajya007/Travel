@@ -9,6 +9,7 @@
 		top: 0;
 		width: 12.8125rem;
 		height: 14rem;
+		z-index: -1;
 	}
 	.services-bottom {
 		position: absolute;
@@ -110,5 +111,9 @@
 	.cards {
 		align-items: center;
 		justify-content: center;
+	}
+	.services-top,
+	.services-bottom {
+		display: none;
 	}
 }

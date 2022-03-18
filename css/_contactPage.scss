@@ -97,7 +97,7 @@
 		padding: 0.65rem;
 		outline: none;
 		border: none;
-		border-radius: 5px;
+		border-radius: 0.3125rem;
 		font-family: Poppins;
 		font-size: 1.5rem;
 		font-style: normal;
@@ -114,19 +114,19 @@
 	gap: 2.75rem;
 	h3 {
 		font-family: $Volkhov;
-		font-size: 50px;
+		font-size: 3.125rem;
 		font-style: normal;
 		font-weight: 700;
-		line-height: 62px;
+		line-height: 3.875rem;
 		letter-spacing: 0rem;
 		color: hsla(225, 99%, 32%, 1);
 	}
 	h4 {
 		font-family: $Poppins;
-		font-size: 18px;
+		font-size: 1.125rem;
 		font-style: normal;
 		font-weight: 600;
-		line-height: 18px;
+		line-height: 1.125rem;
 		letter-spacing: 0rem;
 		color: hsla(225, 99%, 32%, 1);
 	}
@@ -140,10 +140,10 @@
 		gap: 0.8rem;
 		p {
 			font-family: $sans;
-			font-size: 20px;
+			font-size: 1.25rem;
 			font-style: normal;
 			font-weight: 400;
-			line-height: 27px;
+			line-height: 1.6875rem;
 			letter-spacing: 0rem;
 			text-align: left;
 			color: hsla(0, 0%, 0%, 1);
@@ -155,7 +155,7 @@
 	display: flex;
 
 	width: 100%;
-	min-height: 301px;
+	min-height: 18.8125rem;
 
 	iframe {
 		width: 100%;
@@ -166,11 +166,22 @@
 //mobile.....................................................................................................
 
 @media only screen and (max-width: 467px) {
+	.contact-showcase-content-text {
+		h1 {
+			font-size: 3.5rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+	}
 	.contatPageContainer {
 		grid-template-columns: 1fr;
 		padding-left: 2rem;
 		padding-right: 2rem;
 		text-align: center;
+	}
+
+	.contact-form {
+		padding: 1.75rem 1.125rem;
 	}
 }
 
@@ -182,6 +193,11 @@
 		padding-left: 2rem;
 		padding-right: 2rem;
 		text-align: center;
+	}
+	.mid-pard {
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 }
 

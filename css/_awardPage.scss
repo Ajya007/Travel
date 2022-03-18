@@ -1,8 +1,24 @@
-.global-card {
+.award-page-container {
+	h2 {
+		font-family: $Volkhov;
+		font-size: 50px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 65px;
+		letter-spacing: 0rem;
+		color: #2e2e2e;
+		text-align: center;
+		padding-top: 3rem;
+		padding-bottom: 0.5rem;
+	}
+}
+
+.award-card {
 	background: #ffffff;
 	border-radius: 1.5rem;
 	width: 22.8125rem;
 	overflow: hidden;
+	position: relative;
 	filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02))
 		drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
 		drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481))
@@ -11,7 +27,16 @@
 		drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
 }
 
-.global-card-image {
+.award-date {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+	background: rgba(255, 255, 255, 0.75);
+	border-radius: 0.75rem;
+	padding: 0.625rem;
+}
+
+.award-card-image {
 	width: 22.8125rem;
 	height: 16.125rem;
 
@@ -23,7 +48,7 @@
 	}
 }
 
-.global-card-texxts {
+.award-card-texxts {
 	padding: 1.4375rem 1.5625rem;
 	h4 {
 		font-family: $Poppins;
@@ -34,8 +59,10 @@
 		letter-spacing: 0rem;
 		color: hsla(233, 16%, 44%, 1);
 		margin-bottom: 0.4375rem;
+		text-align: center;
 	}
 	p {
+		text-align: center;
 		font-family: $sans;
 		font-size: 1rem;
 		font-style: normal;
@@ -44,5 +71,25 @@
 		letter-spacing: 0rem;
 		color: hsla(0, 0%, 18%, 1);
 		margin-bottom: 0.8125rem;
+	}
+}
+
+.award-page-gallery {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
+//mobile.....................................................................................................
+
+@media only screen and (max-width: 467px) {
+	.awardPageHeader {
+		h1 {
+			font-size: 3.5rem;
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
 	}
 }

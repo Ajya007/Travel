@@ -1,3 +1,8 @@
+.extra {
+	h2 {
+		max-width: 39.125rem;
+	}
+}
 .adventure-start {
 	position: relative;
 
@@ -48,6 +53,13 @@
 		align-items: center;
 		p {
 			margin: 0.3125rem 0;
+			font-family: $Poppins;
+			font-size: 1.3rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 1.5rem;
+			letter-spacing: 0rem;
+			color: hsla(0, 0%, 0%, 1);
 		}
 	}
 	.ad-start-sub-part-2 {
@@ -58,6 +70,13 @@
 		align-items: center;
 		p {
 			margin: 0.3125rem 0;
+			font-family: $Poppins;
+			font-size: 1.3rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 1.5rem;
+			letter-spacing: 0rem;
+			color: hsla(0, 0%, 0%, 1);
 		}
 	}
 }
@@ -73,6 +92,13 @@
 		align-items: center;
 		p {
 			margin: 0.3125rem 0;
+			font-family: $Poppins;
+			font-size: 1.3rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 1.5rem;
+			letter-spacing: 0rem;
+			color: hsla(0, 0%, 0%, 1);
 		}
 	}
 	.ad-start-sub-part-2 {
@@ -83,6 +109,13 @@
 		align-items: center;
 		p {
 			margin: 0.3125rem 0;
+			font-family: $Poppins;
+			font-size: 1.3rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 1.5rem;
+			letter-spacing: 0rem;
+			color: hsla(0, 0%, 0%, 1);
 		}
 	}
 }
@@ -99,13 +132,20 @@
 		align-items: center;
 		p {
 			margin: 0.3125rem 0;
+			font-family: $Poppins;
+			font-size: 1.3rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 1.5rem;
+			letter-spacing: 0rem;
+			color: hsla(0, 0%, 0%, 1);
 		}
 	}
 }
 
 .ad-start-img {
-	width: 250px;
-	height: 250px;
+	width: 15.625rem;
+	height: 15.625rem;
 	img {
 		border-radius: 50%;
 		width: 100%;
@@ -118,10 +158,10 @@
 
 @media only screen and (max-width: 467px) {
 	.a-point-1 {
-		max-width: 370px;
+		max-width: 23.125rem;
 	}
 	.a-point-2 {
-		max-width: 370px;
+		max-width: 23.125rem;
 	}
 	.adventure-start {
 		h2 {

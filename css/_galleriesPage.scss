@@ -1,0 +1,16 @@
+.galleryPageContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+.galleryPageCard {
+	width: 22.8125rem;
+	.gpc-img {
+		width: 22.8125rem;
+		img {
+			width: 100%;
+		}
+	}
+}

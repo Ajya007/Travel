@@ -260,6 +260,23 @@
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
+	.step-container {
+		justify-content: center;
+		align-items: center;
+	}
+	.step-part-1 {
+		h3 {
+			text-align: center;
+		}
+		h2 {
+			text-align: center;
+		}
+	}
+	.step-sub-part {
+		align-items: center;
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
 }
 
 //for small laptop
