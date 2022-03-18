@@ -1,16 +1,82 @@
+.gallery-header-container {
+	h3 {
+		font-family: $Volkhov;
+		font-size: 3.125rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 4.0625rem;
+		letter-spacing: 0rem;
+		text-align: center;
+		padding-top: 3rem;
+		padding-bottom: 2rem;
+		color: hsla(0, 0%, 18%, 1);
+	}
+}
 .galleryPageContainer {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	gap: 1rem;
+	flex-wrap: wrap;
 }
 
 .galleryPageCard {
 	width: 22.8125rem;
+	overflow: hidden;
+	position: relative;
+	background-color: #ffffff;
+	filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02))
+		drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852))
+		drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481))
+		drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01))
+		drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185))
+		drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+	border-radius: 24px;
+	h3 {
+		font-family: $Poppins;
+		font-size: 1.125rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.375rem;
+		letter-spacing: 0rem;
+		text-align: center;
+		padding: 2.625rem 0rem;
+	}
+	.gpc-location {
+		display: flex;
+		gap: 1rem;
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		justify-content: center;
+		align-items: center;
+		background-color: hsla(0, 0%, 100%, 0.75);
+		padding: 10px;
+		border-radius: 12px;
+	}
 	.gpc-img {
 		width: 22.8125rem;
+		height: 21.6875rem;
+
 		img {
 			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center center;
 		}
+	}
+}
+
+//galleries collections
+
+.galleryPagesubCard {
+	width: 22.8125rem;
+	height: 25rem;
+	cursor: pointer;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center center;
 	}
 }
