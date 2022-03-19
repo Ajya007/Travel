@@ -149,14 +149,14 @@ a {
 .global-card {
   background: #ffffff;
   border-radius: 1.5rem;
-  width: 22.8125rem;
+  width: 22rem;
   overflow: hidden;
   -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
           filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
 }
 
 .global-card-image {
-  width: 22.8125rem;
+  width: 22rem;
   height: 16.125rem;
 }
 
@@ -2222,7 +2222,8 @@ a {
   display: block;
   text-align: center;
   padding: 0;
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 .aboutSlider .slick-dots li {
@@ -2884,7 +2885,8 @@ a {
   display: block;
   text-align: center;
   padding: 0;
-  width: 100%;
+  width: 90%;
+  margin: auto;
 }
 
 .adventureSlider .slick-dots li {
@@ -3543,5 +3545,258 @@ a {
      object-fit: cover;
   -o-object-position: center center;
      object-position: center center;
+}
+
+.a-l-n-container h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0rem;
+  text-align: left;
+  color: #242424;
+}
+
+.mardi-container h2 {
+  font-family: "Volkhov", serif;
+  font-size: 3.125rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0rem;
+  color: #2e2e2e;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.mardi-container h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0rem;
+  color: #1e1d4c;
+  padding-top: 1.4rem;
+  padding-bottom: 0.6rem;
+}
+
+.mardi-container p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: #5e6282;
+}
+
+.mardi-container .m-t-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.m-t-img-box {
+  width: 50%;
+  height: 15rem;
+}
+
+.m-t-img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center center;
+     object-position: center center;
+}
+
+.package-tripDetail-container {
+  padding: 4rem 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pTD-sec1 h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.8rem;
+  letter-spacing: 0rem;
+  padding: 1.1rem 0rem;
+  color: #1e1d4e;
+}
+
+.pTD-sec1 details {
+  padding: 1rem 0rem;
+}
+
+.pTD-sec1 summary {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.8rem;
+  letter-spacing: 0rem;
+}
+
+.pTD-sec1 p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0rem;
+  color: #5e6282;
+  max-width: 500px;
+}
+
+.discount-section {
+  margin-top: 5rem;
+}
+
+.p-d-discount-container {
+  background-image: url("../images/discount.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p-d-discount-part-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 0.9rem;
+  padding-left: 2.3125rem;
+  padding-right: 2.3125rem;
+  padding-top: 1.5rem;
+}
+
+.p-d-discount-part-1 .sub-prt p {
+  color: #1a1a1a;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2rem;
+  letter-spacing: 0rem;
+  margin-bottom: 2px;
+}
+
+.p-d-discount-part-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 2.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5625rem 2.3125rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.p-d-discount-part-2 h3 {
+  font-family: "Volkhov", serif;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 3.75rem;
+  letter-spacing: 0rem;
+  color: #2e2e2e;
+}
+
+@media only screen and (max-width: 467px) {
+  .m-t-image {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .m-t-img-box {
+    width: 90%;
+  }
+  .mardi-container h2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .mardi-container h3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+  .mardi-container p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+  .pTD-sec1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .pTD-sec1 h4 {
+    text-align: center;
+  }
+  .p-d-discount-part-2 h3 {
+    font-size: 2.75rem;
+  }
+}
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+  .mardi-container h2 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  .mardi-container h3 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+  .mardi-container p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+  .pTD-sec1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .pTD-sec1 h4 {
+    text-align: center;
+  }
+  .package-tripDetail-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,234 @@
+.a-l-n-container {
+	h4 {
+		font-family: $Poppins;
+		font-size: 1.2rem;
+		font-style: normal;
+		font-weight: 600;
+
+		letter-spacing: 0rem;
+		text-align: left;
+		color: hsla(0, 0%, 14%, 1);
+	}
+}
+.mardi-container {
+	h2 {
+		font-family: $Volkhov;
+		font-size: 3.125rem;
+		font-style: normal;
+		font-weight: 700;
+
+		letter-spacing: 0rem;
+		color: hsla(0, 0%, 18%, 1);
+		padding-top: 3rem;
+		padding-bottom: 1rem;
+	}
+	h3 {
+		font-family: $Poppins;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 30px;
+		letter-spacing: 0rem;
+		color: #1e1d4c;
+		padding-top: 1.4rem;
+		padding-bottom: 0.6rem;
+	}
+	p {
+		font-family: $Poppins;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.5rem;
+		letter-spacing: 0rem;
+		color: hsla(233, 16%, 44%, 1);
+	}
+	.m-t-image {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.m-t-img-box {
+	width: 50%;
+	height: 15rem;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center center;
+	}
+}
+.package-tripDetail-container {
+	padding: 4rem 0rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.pTD-sec1 {
+	h4 {
+		font-family: $Poppins;
+		font-size: 1.2rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 1.8rem;
+		letter-spacing: 0rem;
+		padding: 1.1rem 0rem;
+		color: hsla(241, 45%, 21%, 1);
+	}
+	details {
+		padding: 1rem 0rem;
+	}
+	summary {
+		font-family: $Poppins;
+		font-size: 1.1rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 1.8rem;
+		letter-spacing: 0rem;
+	}
+	p {
+		font-family: $Poppins;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 1.5rem;
+		letter-spacing: 0rem;
+		color: hsla(233, 16%, 44%, 1);
+		max-width: 500px;
+	}
+}
+
+//discount
+
+.discount-section {
+	margin-top: 5rem;
+}
+.p-d-discount-container {
+	background-image: url("../images/discount.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.p-d-discount-part-1 {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 0.9rem;
+	padding-left: 2.3125rem;
+	padding-right: 2.3125rem;
+	padding-top: 1.5rem;
+
+	.sub-prt {
+		p {
+			color: hsla(0, 0%, 10%, 1);
+			font-family: $Poppins;
+			font-size: 0.9rem;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 1.2rem;
+			letter-spacing: 0rem;
+			margin-bottom: 2px;
+		}
+	}
+}
+
+.p-d-discount-part-2 {
+	display: flex;
+	gap: 2.5rem;
+	justify-content: center;
+	align-items: center;
+	padding: 1.5625rem 2.3125rem;
+	flex-wrap: wrap;
+	h3 {
+		font-family: $Volkhov;
+		font-size: 2.5rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 3.75rem;
+		letter-spacing: 0rem;
+
+		color: hsla(0, 0%, 18%, 1);
+	}
+}
+
+//mobile.....................................................................................................
+
+@media only screen and (max-width: 467px) {
+	.m-t-image {
+		flex-direction: column;
+	}
+	.m-t-img-box {
+		width: 90%;
+	}
+	.mardi-container {
+		h2 {
+			padding-left: 1rem;
+			padding-right: 1rem;
+			text-align: center;
+			font-size: 2.5rem;
+		}
+		h3 {
+			padding-left: 1rem;
+			padding-right: 1rem;
+			text-align: center;
+		}
+		p {
+			padding-left: 1rem;
+			padding-right: 1rem;
+			text-align: center;
+		}
+	}
+
+	.pTD-sec1 {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		h4 {
+			text-align: center;
+		}
+	}
+
+	.p-d-discount-part-2 {
+		h3 {
+			font-size: 2.75rem;
+		}
+	}
+}
+
+//tablets.....................................................................................................
+
+@media only screen and (min-width: 469px) and (max-width: 768px) {
+	.mardi-container {
+		h2 {
+			padding-left: 1rem;
+			padding-right: 1rem;
+			text-align: center;
+			font-size: 2.5rem;
+		}
+		h3 {
+			padding-left: 1rem;
+			padding-right: 1rem;
+			text-align: center;
+		}
+		p {
+			padding-left: 1rem;
+			padding-right: 1rem;
+			text-align: center;
+		}
+	}
+
+	.pTD-sec1 {
+		padding-left: 1rem;
+		padding-right: 1rem;
+		h4 {
+			text-align: center;
+		}
+	}
+	.package-tripDetail-container {
+		justify-content: center;
+	}
+}

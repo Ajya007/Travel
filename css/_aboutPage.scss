@@ -15,7 +15,9 @@
 		display: block;
 		text-align: center;
 		padding: 0;
-		width: 100%;
+		width: 90%;
+
+		margin: auto;
 	}
 	.slick-dots li {
 		position: relative;
@@ -182,6 +184,7 @@
 
 .a-l-n-cards {
 	padding: 1.5rem 2rem;
+
 	display: flex;
 	gap: 2rem;
 	justify-content: space-between;
