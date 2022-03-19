@@ -15,7 +15,7 @@ card.forEach(el => {
 let cardtoggle = false
 function cardToggler(e) {
   let pink = e.target.children[1]
-  
+
   pink.classList.toggle("show")
 }
 
@@ -49,3 +49,37 @@ function toggleMenu() {
 
 
 
+const popUp = document.querySelector(".popUpGallery");
+const popUpClose = document.querySelector(".PopClose");
+const imagess = document.querySelectorAll(".galleryPagesubCard img")
+const ProductImg = document.querySelector(".popUpImage img");
+
+
+console.log("this", imagess)
+
+
+popUpClose.addEventListener('click', () => {
+
+  popUp.classList.remove("toggle")
+});
+
+
+// imagess.forEach(el => {
+//   el.addEventListener('click', changeImages);
+// })
+
+
+// function changeImages(e) {
+//   console.log(e)
+
+//   popUp.classList.add("toggle")
+// }
+
+function setImage(picSrc) {
+
+  popUp.classList.add("toggle")
+  console.log("p", ProductImg)
+  ProductImg.src = picSrc
+
+
+}
